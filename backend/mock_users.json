@@ -1,0 +1,352 @@
+[
+  {
+    "name": "System Admin",
+    "email": "admin@college.edu",
+    "role": "admin",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Registrar",
+    "email": "registrar@college.edu",
+    "role": "admin",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dean of Research",
+    "email": "dean@college.edu",
+    "role": "admin",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Exam Controller",
+    "email": "controller@college.edu",
+    "role": "admin",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Librarian",
+    "email": "librarian@college.edu",
+    "role": "admin",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty CSE 1",
+    "email": "faculty.cse1@college.edu",
+    "role": "faculty",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty CSE 2",
+    "email": "faculty.cse2@college.edu",
+    "role": "faculty",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Asst. Prof. Faculty CSE 3",
+    "email": "faculty.cse3@college.edu",
+    "role": "faculty",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty ECE 1",
+    "email": "faculty.ece1@college.edu",
+    "role": "faculty",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty ECE 2",
+    "email": "faculty.ece2@college.edu",
+    "role": "faculty",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Asst. Prof. Faculty ECE 3",
+    "email": "faculty.ece3@college.edu",
+    "role": "faculty",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty EEE 1",
+    "email": "faculty.eee1@college.edu",
+    "role": "faculty",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty EEE 2",
+    "email": "faculty.eee2@college.edu",
+    "role": "faculty",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Asst. Prof. Faculty EEE 3",
+    "email": "faculty.eee3@college.edu",
+    "role": "faculty",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty ME 1",
+    "email": "faculty.me1@college.edu",
+    "role": "faculty",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty ME 2",
+    "email": "faculty.me2@college.edu",
+    "role": "faculty",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty CE 1",
+    "email": "faculty.ce1@college.edu",
+    "role": "faculty",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty CE 2",
+    "email": "faculty.ce2@college.edu",
+    "role": "faculty",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Dr. Faculty IT 1",
+    "email": "faculty.it1@college.edu",
+    "role": "faculty",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Prof. Faculty IT 2",
+    "email": "faculty.it2@college.edu",
+    "role": "faculty",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CSE 1",
+    "email": "student.cse1@college.edu",
+    "role": "student",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CSE 2",
+    "email": "student.cse2@college.edu",
+    "role": "student",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CSE 3",
+    "email": "student.cse3@college.edu",
+    "role": "student",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CSE 4",
+    "email": "student.cse4@college.edu",
+    "role": "student",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CSE 5",
+    "email": "student.cse5@college.edu",
+    "role": "student",
+    "department": "CSE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ECE 1",
+    "email": "student.ece1@college.edu",
+    "role": "student",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ECE 2",
+    "email": "student.ece2@college.edu",
+    "role": "student",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ECE 3",
+    "email": "student.ece3@college.edu",
+    "role": "student",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ECE 4",
+    "email": "student.ece4@college.edu",
+    "role": "student",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ECE 5",
+    "email": "student.ece5@college.edu",
+    "role": "student",
+    "department": "ECE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student EEE 1",
+    "email": "student.eee1@college.edu",
+    "role": "student",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student EEE 2",
+    "email": "student.eee2@college.edu",
+    "role": "student",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student EEE 3",
+    "email": "student.eee3@college.edu",
+    "role": "student",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student EEE 4",
+    "email": "student.eee4@college.edu",
+    "role": "student",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student EEE 5",
+    "email": "student.eee5@college.edu",
+    "role": "student",
+    "department": "EEE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ME 1",
+    "email": "student.me1@college.edu",
+    "role": "student",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ME 2",
+    "email": "student.me2@college.edu",
+    "role": "student",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ME 3",
+    "email": "student.me3@college.edu",
+    "role": "student",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ME 4",
+    "email": "student.me4@college.edu",
+    "role": "student",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Student ME 5",
+    "email": "student.me5@college.edu",
+    "role": "student",
+    "department": "ME",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CE 1",
+    "email": "student.ce1@college.edu",
+    "role": "student",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CE 2",
+    "email": "student.ce2@college.edu",
+    "role": "student",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CE 3",
+    "email": "student.ce3@college.edu",
+    "role": "student",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CE 4",
+    "email": "student.ce4@college.edu",
+    "role": "student",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student CE 5",
+    "email": "student.ce5@college.edu",
+    "role": "student",
+    "department": "CE",
+    "password": "User@123"
+  },
+  {
+    "name": "Student IT 1",
+    "email": "student.it1@college.edu",
+    "role": "student",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Student IT 2",
+    "email": "student.it2@college.edu",
+    "role": "student",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Student IT 3",
+    "email": "student.it3@college.edu",
+    "role": "student",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Student IT 4",
+    "email": "student.it4@college.edu",
+    "role": "student",
+    "department": "IT",
+    "password": "User@123"
+  },
+  {
+    "name": "Student IT 5",
+    "email": "student.it5@college.edu",
+    "role": "student",
+    "department": "IT",
+    "password": "User@123"
+  }
+]
