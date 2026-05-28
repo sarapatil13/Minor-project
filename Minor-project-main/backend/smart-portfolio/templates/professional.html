@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { font-family: "Helvetica", "Arial", sans-serif; line-height: 1.5; color: #334155; padding: 40px; background: #fff; }
+    header { border-left: 6px solid #2563eb; padding-left: 20px; margin-bottom: 30px; }
+    h1 { font-size: 32px; color: #1e293b; margin: 0; letter-spacing: -0.5px; }
+    h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: #2563eb; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px; margin-top: 30px; }
+    .role { color: #64748b; font-size: 16px; margin-top: 5px; }
+    ul { list-style-type: none; padding-left: 0; }
+    li { margin-bottom: 15px; position: relative; }
+    .item-title { font-weight: 700; color: #1e293b; display: block; }
+    .item-desc { color: #475569; display: block; margin-top: 3px; font-size: 14px; }
+    .date { color: #94a3b8; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{name}}</h1>
+    <div class="role">Professional Portfolio</div>
+  </header>
+
+  <section>
+    <h2>Core Publications</h2>
+    <ul>
+      {{publications}}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Activity & Engagements</h2>
+    <ul>
+      {{events}}
+    </ul>
+  </section>
+</body>
+</html>

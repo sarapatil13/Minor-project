@@ -1,0 +1,9 @@
+{
+  "logs": [
+    "Admin Found: admin@college.edu",
+    "Querying for ADMIN: { status: 'pending_admin' }",
+    "Papers Found via Admin Query: 1",
+    "Sample Paper Title: vfsv",
+    "Sample Paper Status: pending_admin"
+  ]
+}
