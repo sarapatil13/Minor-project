@@ -3,6 +3,7 @@ const bcrypt = require('bcryptjs');
 const dotenv = require('dotenv');
 const Department = require('./models/Department');
 const User = require('./models/User');
+const { Student } = require('./controllers/recController');
 
 dotenv.config();
 
@@ -14,6 +15,7 @@ const seedData = async () => {
         // Clear existing data
         await Department.deleteMany({});
         await User.deleteMany({});
+        await Student.deleteMany({});
 
         // Create Departments
         const departments = await Department.insertMany([
@@ -77,6 +79,53 @@ const seedData = async () => {
 
         console.log(`Seeded ${allUsers.length} users successfully.`);
         console.log('Credentials for all users: Email as listed, Password: ' + commonPassword);
+
+        // Seed recommendation student profiles
+        const studentProfiles = [];
+        const targetDomains = [
+            "Software Engineering",
+            "Frontend Developer",
+            "Backend Developer",
+            "Data Science",
+            "Machine Learning",
+            "UI/UX Design",
+            "Cloud Architect"
+        ];
+        
+        const skillSets = [
+            ["javascript", "react", "html", "css", "node.js", "git"],
+            ["python", "machine learning", "deep learning", "nlp", "statistics"],
+            ["java", "spring", "sql", "docker", "kubernetes", "aws"],
+            ["golang", "rust", "kubernetes", "docker", "gcp", "git"],
+            ["javascript", "typescript", "angular", "css", "html"],
+            ["python", "data analysis", "pandas", "numpy", "tableau", "excel"],
+            ["communication", "leadership", "problem solving", "agile", "scrum"]
+        ];
+
+        // Seed profiles for actual user database students
+        const studentUsers = allUsers.filter(u => u.role === 'student');
+        studentUsers.forEach((studentUser, idx) => {
+            studentProfiles.push({
+                studentId: studentUser._id.toString(),
+                skills: skillSets[idx % skillSets.length],
+                targetDomain: targetDomains[idx % targetDomains.length],
+                appliedInternships: []
+            });
+        });
+
+        // Seed fallback/test S101 to S150 student profiles
+        for (let i = 101; i <= 150; i++) {
+            const index = i % targetDomains.length;
+            studentProfiles.push({
+                studentId: `S${i}`,
+                skills: skillSets[i % skillSets.length],
+                targetDomain: targetDomains[index],
+                appliedInternships: []
+            });
+        }
+
+        await Student.insertMany(studentProfiles);
+        console.log('Seeded recommendation student profiles.');
 
         // Write credentials to file for user reference (optional but helpful for the request)
         const runFs = require('fs');

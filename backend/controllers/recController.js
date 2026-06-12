@@ -1,6 +1,9 @@
 const axios = require("axios");
 const mongoose = require("mongoose");
 
+// Reduce mongoose operation timeout so fallback is fast when MongoDB is down
+mongoose.set('bufferTimeoutMS', 3000);
+
 // ============================================================================
 // MONGOOSE SCHEMA & MODEL (INLINE DEFINITION)
 // ============================================================================
@@ -95,18 +98,25 @@ const getStudentDashboard = async (req, res) => {
     console.log(`[getStudentDashboard] Processing request for Student ID: ${studentId}`);
 
     // ========================================================================
-    // STEP 2: Query MongoDB for student record
+    // STEP 2: Query MongoDB for student record (with graceful offline fallback)
     // ========================================================================
-    let studentProfile = await Student.findOne({ studentId });
+    let studentProfile = null;
+    try {
+      studentProfile = await Student.findOne({ studentId });
+      if (studentProfile) {
+        console.log(`[getStudentDashboard] Successfully retrieved student ${studentId} from database`);
+      }
+    } catch (dbErr) {
+      console.warn(
+        `[getStudentDashboard] MongoDB unavailable (${dbErr.message}). Using mock fallback.`
+      );
+    }
 
     if (!studentProfile) {
       console.log(
-        `[getStudentDashboard] Student ${studentId} not found in database. Using mock fallback.`
+        `[getStudentDashboard] Student ${studentId} not in DB or DB offline. Using mock fallback.`
       );
-      // Create and use mock student document
       studentProfile = createMockStudent(studentId);
-    } else {
-      console.log(`[getStudentDashboard] Successfully retrieved student ${studentId} from database`);
     }
 
     // ========================================================================
@@ -115,7 +125,7 @@ const getStudentDashboard = async (req, res) => {
     console.log(`[getStudentDashboard] Calling FastAPI engine at ${RECOMMEND_ENDPOINT}`);
 
     const fastApiPayload = {
-      student_id: parseInt(studentId, 10),
+      student_id: parseInt(studentId.toString().replace(/\D/g, "") || "101", 10),
       skills: studentProfile.skills,
       target_domain: studentProfile.targetDomain,
     };

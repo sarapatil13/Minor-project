@@ -64,6 +64,9 @@ export default function StudentDashboard() {
                         </p>
                     </div>
                     <div className="absolute bottom-12 right-12 hidden lg:flex gap-4">
+                        <Link href="/analytics" className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-indigo-600 text-white rounded-3xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform shadow-xl">
+                            Career Insights
+                        </Link>
                         <Link href="/upload/paper" className="px-10 py-5 bg-white text-blue-700 rounded-3xl font-black uppercase tracking-widest text-xs hover:scale-105 transition-transform shadow-xl">
                             New Submission
                         </Link>

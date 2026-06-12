@@ -27,6 +27,9 @@ app.use('/api/report', require('./routes/report'));
 app.use('/api/notifications', require('./routes/notifications'));
 app.use('/api/departments', require('./routes/departments'));
 app.use('/api/events', require('./routes/events'));
+app.use('/api/student', require('./routes/student'));
+app.use('/api/achievements', require('./routes/achievementRoutes'));
+
 
 app.get('/api/health', (req, res) => {
   res.status(200).json({ status: 'ok' });

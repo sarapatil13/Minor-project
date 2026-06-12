@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, useEffect } from "react";
 import {
   ResponsiveContainer,
@@ -203,10 +205,19 @@ const AnalyticsDashboard = () => {
         setLoading(true);
         setError(null);
 
-        console.log("[AnalyticsDashboard] Fetching dashboard data from gateway...");
+        let studentId = "S101";
+        if (typeof window !== "undefined") {
+          const userData = localStorage.getItem("user");
+          if (userData) {
+            const user = JSON.parse(userData);
+            studentId = user._id || "S101";
+          }
+        }
+
+        console.log(`[AnalyticsDashboard] Fetching dashboard data for student ${studentId} from gateway...`);
 
         const response = await fetch(
-          "http://127.0.0.1:5000/api/student/S101/dashboard",
+          `http://127.0.0.1:5000/api/student/${studentId}/dashboard`,
           {
             method: "GET",
             headers: {
